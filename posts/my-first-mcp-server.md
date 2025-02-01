@@ -236,3 +236,29 @@ I received successful results when clicking on “Run Tool” indicating my serv
 ![MCP Inspector - Tool Results](../images/mcp-inspector-tool-results.png)
 
 ### Claude Desktop with Local MCP Server
+
+Once I had a successful test from the MCP Inspector, it was time to test my tool with an LLM. As the documentation suggests, I used Claude Desktop, which can be found [here](https://claude.ai/download)
+
+Claude Desktop is ready to work with a local MCP Server. I just needed to update the Claude config file so that Claude is aware of my MCP Server and knows how to start it up.
+
+I createed the config file in the following location on my mac: `~/Library/Application Support/Claude/claude_desktop_config.json`
+
+And, added my MCP Server details like this:
+
+```
+{
+    "mcpServers": {
+        "nps": {
+            "command": "node",
+            "args": [
+                "/Users/amysatterlee/git/mcp/nps_mcp/build/index.js"
+            ]
+        }
+    }
+}
+```
+
+After restarting Claude Desktop, I was able to see my tool.
+
+
+

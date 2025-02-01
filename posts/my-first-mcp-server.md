@@ -260,5 +260,39 @@ And, added my MCP Server details like this:
 
 After restarting Claude Desktop, I was able to see my tool.
 
+![Claude - Tools](../images/claude-tools-icon.png)
 
+![Claude - Tools Available](../images/claude-tools-available.png)
+
+Now for the first prompt to Claude. “Tell me details about Yellowstone National Park.” I did not expect this to work, however, Claude knew how to convert Yellowstone National Park into the “yell” code that was expected from the API. The first call was a success. Amazing!
+
+<screenshot>
+
+I was able to verify the input and output from that call to the park-detail tool by clicking the toggle.
+
+Then, I tried another query. “Give me all the national parks in Pennsylvania” and it bombed.
+
+<screenshot>
+
+### Troubleshooting
+
+#### Claude Desktop Logs
+
+Claude Desktop does provide some logs, but in my case, they were of no help. However, on other issues I had faced, these logs were helpful. So, worth a look. On a mac, these logs are found in the `~/Library/Logs/Claude` directory.
+
+#### Chrome DevTools 
+
+This requires a little setup but was very helpful in my case. First, I created the developer_settings.json file in the same directory as the other config file `~/Library/Application Support/Claude/`. I added the following to the config file:
+
+```
+{"allowDevTools": true}
+```
+
+I restared Claude and opened up DevTools with `Command-Option-Shift-i`
+
+This is when I realized that the amount of data I was sending to Claude may be the issue. The tool_result shows a successful return and the data I expected. Claude failed to process this data.
+
+<screenshot of tool_result>
+
+And with that, I am taking the progress as a win :tada: And, back to the drawing board to refactor my tool to provide a more consumable chunk of data. Stay tuned.
 

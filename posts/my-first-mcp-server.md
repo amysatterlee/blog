@@ -219,4 +219,18 @@ In order to test a node MCP Server I needed a client that understands and follow
 
 In the root directory, I ran `npm run build` and then `npx @modelcontextprotocol/inspector node ./build/index.js` which started the MCP Inspector.
 
+![MCP Inspector](../images/mcp-inspector-connect.png)
 
+In my case, the defaults were appropriate. This is an STDIO server that is initiated with `node ./build/index.js` command.
+
+To test my single tool, I navigated to the Tools tab at the top and clicked the List Tools button. My tool `park-detail` was returned and I could then click on that to use it.
+
+![MCP Inspector - List Tools](../images/mcp-inspector-list-tools.png)
+
+The panel on the right has the description and arguments for my park-details tool. Both are optional arguments and if none are provided, the entire list should be returned.
+
+![MCP Inspector - Tool Form](../images/mcp-inspector-tool-form.png)
+
+I received successful results when clicking on “Run Tool” indicating my server was functioning as expected.
+
+![MCP Inspector - Tool Results](../images/mcp-inspector-tool-results.png)

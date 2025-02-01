@@ -269,13 +269,13 @@ After restarting Claude Desktop, I was able to see my tool.
 
 Now for the first prompt to Claude. “Tell me details about Yellowstone National Park.” I did not expect this to work, however, Claude knew how to convert Yellowstone National Park into the “yell” code that was expected from the API. The first call was a success. Amazing!
 
-<screenshot>
+![Claude - Success Response](../images/claude-success-results.png)
 
 I was able to verify the input and output from that call to the park-detail tool by clicking the toggle.
 
 Then, I tried another query. “Give me all the national parks in Pennsylvania” and it bombed.
 
-<screenshot>
+![Claude - Error](../images/claude-error.png)
 
 ### Troubleshooting
 
@@ -293,9 +293,9 @@ This requires a little setup but was very helpful in my case. First, I created t
 
 I restared Claude and opened up DevTools with `Command-Option-Shift-i`
 
-This is when I realized that the amount of data I was sending to Claude may be the issue. The tool_result shows a successful return and the data I expected. Claude failed to process this data.
+This is when I realized that the amount of data I was sending to Claude may be the issue. The `tool_result` call shows that the server tool returned the data I expected successfully. Claude failed to process this data.
 
-<screenshot of tool_result>
+![Claude - DevTools](../images/claude-devtools.png)
 
 And with that, I am taking the progress as a win :tada: And, back to the drawing board to refactor my tool to provide a more consumable chunk of data. Stay tuned.
 

@@ -234,3 +234,5 @@ The panel on the right has the description and arguments for my park-details too
 I received successful results when clicking on “Run Tool” indicating my server was functioning as expected.
 
 ![MCP Inspector - Tool Results](../images/mcp-inspector-tool-results.png)
+
+### Claude Desktop with Local MCP Server

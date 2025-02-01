@@ -252,7 +252,10 @@ And, added my MCP Server details like this:
             "command": "node",
             "args": [
                 "/Users/amysatterlee/git/mcp/nps_mcp/build/index.js"
-            ]
+            ],
+            "env": {
+                "API_KEY": "MY API KEY",
+            }
         }
     }
 }

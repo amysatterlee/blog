@@ -1,1 +1,1 @@
-# blog
+# Amy Satterlee Blog

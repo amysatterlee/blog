@@ -1,4 +1,4 @@
-## My First MCP Server  
+## My First MCP Server - Part 1
 
 I decided to build a Node.js server because I’m comfortable with JavaScript and MCP provides resources for JS developers. To do this, I relied a lot on the documentation from both the [**Model Context Protocol (MCP)**](https://modelcontextprotocol.io/introduction) site and the [**modelcontextprotocol/typescript-sdk**](https://github.com/modelcontextprotocol/typescript-sdk) library.  
 

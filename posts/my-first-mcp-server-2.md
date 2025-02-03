@@ -155,6 +155,6 @@ And below was my successful result using my prompt template:
 
 ### Conclusion
 
-While I did run into some errors using Claude Desktop after these changes, they seem to be intermittent and related to overal Claude availability. For testing purposes, Claude Desktop and The MCP Inspector mentioned in Part 1 are quick tools and very helpful.
+While I did run into some errors using Claude Desktop after these changes, they seem to be intermittent and related to overal Claude availability. For testing purposes, Claude Desktop and The MCP Inspector mentioned in Part 1 are quick tools, very helpful but limited.
 
 My next endeavor will be to build an HTTP SSE Server and a custom MCP Client. Stay tuned.
